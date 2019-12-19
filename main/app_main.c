@@ -315,7 +315,7 @@ void app_main(void)
         work_status = WORK_FIREINIT;
     }
 
-    strncpy(ble_dev_pwd, SerialNum + 3, 4);
+    strncpy(ble_dev_pwd, SerialNum + 1, 4);
     printf("ble_dev_pwd=%s\n", ble_dev_pwd);
 
     ble_app_start();
